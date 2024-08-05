@@ -1,0 +1,83 @@
+.responsive-table {
+    font-family: arial, sans-serif;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+}
+.responsive-table th, .responsive-table td {
+    text-align: left;
+}
+@media (min-width: 800px) {
+    .responsive-table th, .responsive-table td {
+        border: 1px solid #c0c0c0;
+   }
+}
+.responsive-table thead tr {
+    display: none;
+}
+@media (min-width: 800px) {
+    .responsive-table thead tr {
+        display: table-row;
+   }
+}
+.responsive-table tr {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 16px;
+    border: 1px solid #c0c0c0;
+}
+@media (min-width: 800px) {
+    .responsive-table tr {
+        display: table-row;
+        border: 0;
+        margin: 0;
+   }
+}
+.responsive-table th {
+    padding: 12px;
+}
+.responsive-table td {
+    border-top: 1px solid #c0c0c0;
+    padding: 44px 12px 16px;
+    position: relative;
+}
+@media (min-width: 800px) {
+    .responsive-table td {
+        padding: 12px;
+        border-top: 0;
+   }
+}
+.responsive-table td:first-child {
+    font-weight: 700;
+    border-top: 0;
+    padding: 16px 12px;
+}
+.responsive-table td:first-child .faux-th {
+    display: none;
+}
+.responsive-table td ul {
+    margin: 0;
+    padding: 0 0 0 16px;
+}
+.responsive-table .faux-th {
+    height: 36px;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    margin: 0;
+    color: #c0c0c0;
+}
+@media screen and (min-width: 800px) {
+    .responsive-table .faux-th {
+        display: none;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .card{
+    margin-top: 1100px;
+   }
+}
